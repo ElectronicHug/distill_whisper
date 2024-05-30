@@ -1,0 +1,13 @@
+{
+    "model_name_or_path": "openai/whisper-medium",
+
+    "batch_size": 1,
+    "dtype": "float16",
+
+    "generation_max_length": 256,
+    "language": "uk",
+
+    "use_pipeline": true,
+    "attn_implementation": "sdpa"
+
+  }

@@ -1,0 +1,30 @@
+{
+    "model_name_or_path": "models/local_whisper_medium",
+
+    "text_column_name": "sentence",
+    "id_column_name": "path",
+
+    "output_dir": "datasets/labeled_mozila_3",
+    "wandb_project": "distil-whisper-labelling",
+    "per_device_eval_batch_size": 35,
+    "dtype": "float16",
+
+    "attn_implementation": "flash_attn_2",
+    "logging_steps": 500,
+    "max_label_length": 256,
+    "concatenate_audio": true,
+    "preprocessing_batch_size": 100,
+
+    "preprocessing_num_workers": 4,
+    "dataloader_num_workers": 4,
+    "report_to": "wandb",
+
+    "language": "uk",
+    "task": "transcribe",
+    "return_timestamps": true,
+
+    "streaming": false,
+    "generation_num_beams": 1,
+    "push_to_hub": false
+  }
+  

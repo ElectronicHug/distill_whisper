@@ -1,0 +1,13 @@
+{
+    "model_name_or_path": "./models/distiled_student_model_moz_v1",
+
+    "batch_size": 16,
+    "dtype": "float32",
+
+    "generation_max_length": 256,
+    "language": "uk",
+
+    "use_pipeline": false,
+    "attn_implementation": "sdpa"
+
+  }
